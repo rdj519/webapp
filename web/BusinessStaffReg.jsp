@@ -1,8 +1,4 @@
-<%-- 
-    Document   : BusiStaffReg
-    Created on : 12 5, 19, 3:37:47 PM
-    Author     : Johann Gonzales
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

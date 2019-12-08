@@ -1,8 +1,6 @@
-<%-- 
-    Document   : Residen
-    Created on : 12 5, 19, 10:56:24 AM
-    Author     : Johann Gonzales
---%>
+
+<!This page will handle the "invitations to the group">
+<!tbh still not sure how to do the invites thing>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.util.Date, java.text.SimpleDateFormat" %>

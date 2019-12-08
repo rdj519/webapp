@@ -1,8 +1,4 @@
-<%-- 
-    Document   : Residen
-    Created on : 12 5, 19, 10:56:24 AM
-    Author     : Johann Gonzales
---%>
+<!This page handles registering the user into the database>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.util.Date, java.text.SimpleDateFormat" %>
