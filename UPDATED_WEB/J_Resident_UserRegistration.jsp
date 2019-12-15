@@ -47,9 +47,11 @@
             Statement st= con.createStatement();
             ResultSet rs;
             int i =st.executeUpdate("insert into user values (NULL,'"+email+"','"+username+"','"+password+"','"+lastname+"', '"+firstname+"','"+dateDB+"' ,'"+gender+"', '"+address+"')");
-            System.out.println("Updated database yeet");
+            
             /* ANYTHING INSIDE executeUpdate() IS THE SQL STATEMENT THAT JSP WILL PERFORM */
             
+            int h =st.executeUpdate("insert into resident_user (id_user, complete_address, request_ability)values (LAST_INSERT_ID(),'"+address+"', 'Good')");
+
             
             //FIX BELOW
             //int a=st.executeUpdate("insert into resident_user values (LAST_INSERT_ID(), '"+address+"', 'Good Standing', NULL, NULL, NULL, NULL, NULL)");
