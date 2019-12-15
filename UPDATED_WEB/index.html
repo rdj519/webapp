@@ -1,0 +1,33 @@
+
+
+<html>
+    <head>
+        <title>Login Page </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <form method="post" action="LoginHandler.jsp">
+            <h1>Welcome</h1><hr><br>
+            <div>
+                <label> Username: </label>
+                <input type="text" name="username" placeholder="Enter Username" required />
+            </div>
+            <br>
+            <div>
+                <label> Password: </label>
+                <input type="password" name="password" placeholder="Enter Password" required />
+            </div>
+            <br>
+           
+            <input type="submit" name="submit" value ="Login" />
+
+        </form>
+        <!i removed the supplier_user registration since the company themselves 
+            registers them into the database>
+        
+        <p>Don't have an account?<br>Register <a href = "Resident.html">now</a>.</p>
+        <p>For Village Officers/Staff register click here <a href ="villageStaff.html">here</a>.</p>
+    </body>
+</html>
