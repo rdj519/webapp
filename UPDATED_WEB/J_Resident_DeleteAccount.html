@@ -6,11 +6,19 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Delete Account?</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <form method="POST" action="J_Resident_DeleteAccount.jsp">
+            <label> Do you really wish to delete your account? </label><br>
+            <label> Enter your email here to continue</label>
+            <input type="text" name="deleteMail" required/><br>
+            <input type="submit" name="yes" value ="Yes" />
+        </form>
+        <form method="POST" action="J_Resident_ProfileSettings.html">
+            <input type="submit" name="no" value ="No" />
+        </form>
     </body>
 </html>
