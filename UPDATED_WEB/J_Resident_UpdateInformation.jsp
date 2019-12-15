@@ -19,6 +19,7 @@
             String gender = request.getParameter("updateGender");
             String address = request.getParameter("updateAddress");
             
+            String confirm = request.getParameter("confimation");
             
             try //TRY CATCH IMPORTANT FOR CONNECTION ISSUES WITH THE DATABASE
             {
@@ -38,9 +39,10 @@
             
             /* Here is to initialize an SQL statement that JSP can use to INTERACT with the database */
             Statement st= con.createStatement();
-            ResultSet rs;
-            int i =st.executeUpdate("UPDATE user SET (NULL,'"+email+"','"+username+"','"+password+"','"+lastname+"', '"+firstname+"','"+dateDB+"' ,'"+gender+"', '"+address+"')");
             
+            int rs=st.executeUpdate("UPDATE resident_user SET complete_address = '"+address+"' WHERE id_user = (SELECT id_user FROM user WHERE email_adress = '"+confirm+"')");
+            int bs=st.executeUpdate("UPDATE user SET complete_address = '"+address+"', password = '"+password+"', birthday = '"+dateDB+"', complete_address = '"+address+"' WHERE email_adress = '"+confirm+"'");
+            int cs = st.executeUpdate("UPDATE user SET email_adress = '"+email+"' WHERE email_adress = '"+confirm+"'");
             }
             catch (Exception e)
             {
@@ -50,9 +52,15 @@
         %>
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Update Status<!/title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Changes have been saved!</h1>
+        <hr>
+        <p>New email: <% out.print(email);%>. </p>
+        <p>New password: <% out.print(password);%>.</p>
+        <p>New address: <% out.print(address);%>. </p>
+        <p>New birthday: <% out.print(bday);%></p>
+        <p>Click <a href="J_Resident_UpdateInformation.html"></a> to return to the resident menu.</p>
     </body>
 </html>
