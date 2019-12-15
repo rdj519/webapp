@@ -17,6 +17,7 @@
         <h1>Idea here is</h1><br>
         <p>There is a big list/table of all the available products</p>
         <p>Parang Lazada lang tbh</p>
-        <p><a href="ResidentHomePage.jsp">Go back to Home?</a></p>
+        
+        <p><a href="S_Resident_Menu.html">Go back to Home?</a></p>
     </body>
 </html>

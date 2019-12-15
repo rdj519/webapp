@@ -1,5 +1,12 @@
-
-
+<!DOCTYPE html>
+<!-- 
+    INDEX
+    - basically the start-up page
+    - user can:
+        > log-in as a resident user
+        > register as a new resident user
+        > check company reports
+-->
 <html>
     <head>
         <title>Login Page </title>
@@ -8,8 +15,8 @@
     </head>
     
     <body>
-        <form method="post" action="LoginHandler.jsp">
-            <h1>Welcome</h1><hr><br>
+        <form method="post" action="J_LogIn.jsp">
+            <h1>Welcome to Village C!</h1><hr><br>
             <div>
                 <label> Username: </label>
                 <input type="text" name="username" placeholder="Enter Username" required />
@@ -24,10 +31,10 @@
             <input type="submit" name="submit" value ="Login" />
 
         </form>
-        <!i removed the supplier_user registration since the company themselves 
-            registers them into the database>
         
-        <p>Don't have an account?<br>Register <a href = "Resident.html">now</a>.</p>
-        <p>For Village Officers/Staff register click here <a href ="villageStaff.html">here</a>.</p>
+        <p>Don't have an account? Register <a href = "J_Resident_UserRegistration.html">now</a>.</p>
+        
+        <p>Check out the company reports <a href = "A_Report_Menu.html">here</a>.</p>
+        
     </body>
 </html>

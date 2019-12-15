@@ -26,7 +26,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Redirecting...</title>
-    <p><a href="ResidentHomePage.jsp">To Resident Home Page</a> <a href="CompanyHomePage.jsp">To Supplier Home Page</a></p>
+    <p>
+        <a href="S_Resident_Menu.jsp">To Resident Menu</a>
+    </p>
     <p>^^Temporary Remove when the JSP works^^</p>
     </head>
     <body>
