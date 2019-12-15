@@ -1,2 +1,1 @@
-everything is found in "web" folder
-get the entire "InfomProject" folder, I may have messed up with the "Infom" folder mb -dyohan
+dont mind the files here -> place files in UPDATED_WEB
