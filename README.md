@@ -10,4 +10,6 @@ HELLO
   - j = johann
   - r = rey
   
+FILENAME CHANGE: R_Resident_DeleteMember ->  R_Resident_DeleteGroup
+  
 -sam-
