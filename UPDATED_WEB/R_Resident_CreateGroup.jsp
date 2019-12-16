@@ -32,7 +32,8 @@
             /* "jdbc:mysql://<ADDRESS_OF_YOUR_DATABASE>:<PORT_NUMBER>/<NAME_OF_YOUR_DATABASE>?zeroDateTimeBehavior=convertToNull" , <USERNAME>, <PASSWORD> */
             /* IF THERE ARE ANY ISSUES TO WHY U CANT CONNECT TO THE DATABASE JSUT REFER TO THE FORMAT ABOVE */
             Class.forName("com.mysql.jdbc.Driver");
-            java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?zeroDateTimeBehavior=convertToNull","Rey","password");
+            java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?zeroDateTimeBehavior=convertToNull","root","p@ssword");
+            
             
             /* Here is to initialize an SQL statement that JSP can use to INTERACT with the database */
             Statement st= con.createStatement();
@@ -41,8 +42,8 @@
             /* RESIDENT GROUP ID IS SET TO NULL MUNA */
             
             //each for each member
-            int mem1 =st.executeUpdate("insert into resident_group_has_resident_user values (NULL,'"+grpID+"','"+firstId+"')");    
-            int mem2 =st.executeUpdate("insert into resident_group_has_resident_user values (NULL,'"+grpID+"','"+secondId+"')"); 
+            int mem1 =st.executeUpdate("insert into resident_group_has_resident_user values (1, '"+grpID+"','"+firstId+"')");    
+            int mem2 =st.executeUpdate("insert into resident_group_has_resident_user values (1, '"+grpID+"','"+secondId+"')"); 
             
             /* ANYTHING INSIDE executeUpdate() IS THE SQL STATEMENT THAT JSP WILL PERFORM */
             
