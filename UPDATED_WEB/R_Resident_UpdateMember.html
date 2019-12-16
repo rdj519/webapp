@@ -10,10 +10,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <form method ="post">
-		<label> Enter the email address of the person you wish to invite </label><br>
-		<input type="email" name="email">
-		<input type="submit" name="submit" value ="Invite" />
+        <form  method="post" action ="J_Resident_UpdateInformation.jsp">
+		<label> Enter the ID of the person you wish to invite:  </label><br>
+		<input type="text" name="new_id">
+		<input type="submit" name="submit" required/>
+		
+                <br>
+		<label> Enter the ID of the person you wish to delete:  </label><br>
+		<input type="text" name="old_id">
+		<input type="submit" name="submit" required/>
 		</form>
 	
 	<p><a href="R_Resident_GroupInformation.jsp">Click Here to go back. </a></p>

@@ -11,10 +11,30 @@
     </head>
     <body>
         <form method ="post">
-		<label> Enter the email address of the person you wish to invite </label><br>
-		<input type="email" name="email">
-		<input type="submit" name="submit" value ="Invite" />
+		<label> Enter the user ID of the people you wish to invite! </label><br>
 		</form>
+        <h1> Create your Group </h1>
+        <hr>
+        <form  method="post" action ="J_Resident_CreateGroup.jsp">
+            <div>
+                <label> ID 1: </label>
+                <input type="text" name="id_1" placeholder="user ID" required/>
+            </div>
+            <br>
+            <div>
+                <label> ID 2: </label>
+                <input type="text" name="id_2" placeholder="user ID" required=""/>
+            </div>
+            <br>
+            <div>
+                <label> Your ID: </label>
+                <input type="text" name="grp_id" placeholder="user ID" required=""/>
+            </div>
+            <br>
+        
+            <input type="submit" name="submit" value ="Submit" />
+
+        </form>
 	
 	<p><a href="R_Resident_GroupInformation.jsp">Click Here to go back. </a></p>
     </body>

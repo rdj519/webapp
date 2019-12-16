@@ -1,0 +1,29 @@
+
+<!This page serves as the form where a resident_user can create a resident group>
+<!When a resident becomes creates a group then he/she is automatically the leader of the group>
+<!simple template pa lang ito dont rly know how to make it look AHAHAHHA>
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Delete Group?</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="POST" action="J_Resident_DeleteAccount.jsp">
+            <label> Do you really wish to delete your group? </label><br>
+            <label> Enter your group ID here to continue</label>
+            <input type="text" name="deleteId" required/><br>
+            <input type="submit" name="yes" value ="Yes" />
+        </form>
+        <form method="POST" action="R_Resident_GroupInformation.html">
+            <input type="submit" name="no" value ="No" />
+        </form>
+    </body>
+</html>
