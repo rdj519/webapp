@@ -6,11 +6,30 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Transaction Form</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <h1>Transaction Form</h1>
+        <hr>
+        <form  method="post" action ="S_Resident_TransactionForm.jsp">
+            <div>
+                <label> Supplier ID: </label>
+                <input type="number" name="supplierid" placeholder="Enter Supplier ID" required/>
+            </div>
+            <br>
+            <div>
+                <label> Duration: </label>
+                <input type="number" name="duration" placeholder="Enter the Number of Hours" required=""/>
+            </div>
+            <br> 
+        
+            <input type="submit" name="submit" value ="Submit" />
+
+        </form>
+        
+        
     </body>
 </html>
+
