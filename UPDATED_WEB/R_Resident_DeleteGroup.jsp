@@ -8,10 +8,9 @@
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?zeroDateTimeBehavior=convertToNull","root","p@ssword");
-            
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?zeroDateTimeBehavior=convertToNull", "root", "p@ssword");
             Statement st= con.createStatement();
-            int drg = st.executeUpdate("DELETE FROM resident_group WHERE group_id = (SELECT resident_group_group_id FROM resident_group_has_resident_user WHERE resident_group_group_id = '"+group_id+"')");
+            int drg = st.executeUpdate("DELETE FROM resident_group WHERE group_id = '"+group_id+"'");
             int dru = st.executeUpdate("DELETE FROM resident_group_has_resident_user WHERE resident_group_group_id = '"+group_id+"'");
         }
         catch (Exception e)
@@ -31,6 +30,6 @@
     </head>
     <body>
         <p>Group has been successfully deleted!</p>
-        <p>Click <a href="S_Resident_Menu.html">Here</a> to return to the Resident Menu.</p>
+        <p>Click <a href="R_Resident_GroupInformation">Here</a> to return to the Group Information.</p>
     </body>
 </html>

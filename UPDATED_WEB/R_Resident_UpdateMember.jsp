@@ -34,7 +34,7 @@
             /* Here is to initialize an SQL statement that JSP can use to INTERACT with the database */
             Statement st= con.createStatement();
             
-            int rs=st.executeUpdate("UPDATE resident_group_has_resident_user SET resident_user_id_user = '"+new_id+"' WHERE id_user = (SELECT resident_user_id_user FROM resident_group_has_resident_user WHERE resident_user_id_user = '"+old_id+"')");
+            int rs=st.executeUpdate("UPDATE resident_group_has_resident_user SET resident_user_id_user = '"+new_id+"' WHERE resident_user_id_user = (SELECT resident_user_id_user FROM resident_group_has_resident_user WHERE resident_user_id_user = '"+old_id+"')");
             }
             catch (Exception e)
             {
@@ -44,7 +44,7 @@
         %>
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Update Status</title>
+        <title>Update Status<!/title>
     </head>
     <body>
         <h1>Changes have been saved!</h1>
